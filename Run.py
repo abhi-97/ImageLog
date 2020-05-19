@@ -57,7 +57,7 @@ with os.scandir() as src_dir:
             'DateCreated': created
         })
 
-os.chdir("/Users/abhinntrivedi/Desktop/Code/Logs")
+os.chdir("YourPath/Logs")
 time_script_run = datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
 with open('{}_data.json'.format(time_script_run), 'w') as outfile:
     json.dump(data, outfile)
