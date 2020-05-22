@@ -79,9 +79,9 @@ df_albums = pd.DataFrame(lstAlbums)
 
 def check_album_exist(df, name):
     count = 0 
-    for index in small_df['title']:
+    for index in df['title']:
         if index == name:
-            fetched_id = small_df['id'][count]
+            fetched_id = df['id'][count]
             return True, fetched_id
         count += 1
     return False, 'none'
